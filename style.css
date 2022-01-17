@@ -34,7 +34,7 @@ a {
 }
 
 .main {
-  background-image: url("/resources/splash-image.png");
+  background-image: url("resources/splash-image.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ h3 {
 }
 
 .program {
-  padding: 100px 0 25px;
+  padding: 30px 0;
   width: 100%;
   display: flex;
   flex: 1 1 column;
@@ -238,6 +238,10 @@ figcaption {
     width: 100%;
   }
 
+  #the-program {
+    font-size: 2em;
+  }
+
   figure {
     margin: 16px 0px;
   }
@@ -270,13 +274,13 @@ figcaption {
 }
 
 .display-photo {
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
 }
 
 .display-photo img {
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
   border-radius: 175px;
   border: rgba(128, 99, 26, 0.301) solid 3px;
