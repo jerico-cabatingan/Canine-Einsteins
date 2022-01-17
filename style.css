@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+}
+
+/* main */
+
+li {
+  display: inline-block;
+  margin: 0.5em 3em 0em 3em;
+  font-size: 1.5em;
+}
+
+ul {
+  background-color: burlywood;
+  display: inline-block;
+  padding: 0 0 0.5em;
+  border: rgb(36, 31, 26) 1px solid;
+  box-shadow: 5px 5px 5px rgba(87, 82, 78, 0.671);
+  border-radius: 30px;
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'Jua';
+}
+
+.main {
+  background-image: url("/resources/splash-image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.wrapper {
+  width: auto;
+  display: flex; 
+  flex-direction: column;
+  align-items: start;
+  padding-left: 50px;
+  z-index: 3;
+  position: absolute;
+  top: 220px;
+}
+
+h1 {
+  font-family: "Angkor";
+  font-size: 80px;
+  color: aliceblue;
+  -webkit-text-stroke: rgb(36, 31, 26) 2px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Jua";
+  color: aliceblue;
+  text-shadow: black 1px 1px 1px;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 1900px) {
+  .main {
+    background-position: 50% 15%;
+    height: 700px;
+  }
+
+  .wrapper {
+    top: 280px;
+    left: 150px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+  
+  li {
+    font-size: 1.75em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    height: 400px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    -webkit-text-stroke: rgb(36, 31, 26) 1px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    width: 380px;
+  }
+  
+  .wrapper {
+    padding: 0;
+    width: auto;
+    align-items: center;
+    top: 180px;
+    text-align: justify;
+    position: relative;
+  }
+
+  ul {
+    width: 100%;
+    border-radius: 0%;
+    border: 0;
+    border-bottom: rgb(36, 31, 26) 2px solid;
+    margin-top: 0;
+  }
+  
+  nav { 
+    top: 0px;
+  }
+
+  li {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  li {
+    margin: 0.5em 1em 0em 1em;
+    font-size: 0.95em;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  h3 {
+    width: 90%;
+    font-size: 0.8em;
+  }
+  .wrapper {
+    top: 70px;
+  }
+
+  .main {
+    height: 300px;
+    position: relative;
+    top: 33px;
+  }
+}
+
+/* program */
+
+#the-program { 
+  position: relative;
+  top: 25px;
+  text-align: center;
+  font-family: "Dosis";
+  font-size: 4em;
+  letter-spacing: 0.2em;
+}
+
+.program {
+  padding: 100px 0 25px;
+  width: 100%;
+  display: flex;
+  flex: 1 1 column;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: solid 2px rgb(51, 42, 0);
+}
+
+.box {
+  max-width: 500px;
+  max-height: 900px;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto 25px;
+  justify-content: center;
+}
+
+img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+figcaption {
+  font-family: "jua";
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  border: rgb(51, 42, 0) solid 1px;
+  border-radius: 10px;
+}
+
+.description {
+  width: 100%;
+  text-align: justify;
+  font-family: "Dosis";
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 400px) {
+  .box {
+    margin: 0px 0px 20px;
+    padding: 10px;
+  }
+
+  figure {
+    margin: 20px 3px;
+  }
+
+  img {
+    box-shadow: 0px 0px 0px;
+    max-height: 300px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin: 16px 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  img {
+    height: 400px;
+    width: 100%;
+  }
+
+  figure {
+    margin: 16px 0px;
+  }
+  .description {
+    padding: 12px;
+    width: 90%;
+  }
+
+  .box {
+    max-width: 450px;
+    margin: 0 20px;
+  }
+}
+/* staff */
+
+.team {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+#team-members { 
+  position: relative;
+  top: 25px;
+  text-align: center;
+  font-family: "Dosis";
+  font-size: 4em;
+  letter-spacing: 0.2em;
+}
+
+.display-photo {
+  height: 350px;
+  width: 350px;
+}
+
+.display-photo img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 175px;
+  border: rgba(128, 99, 26, 0.301) solid 3px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+.profile {
+  width: 260px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h4 {
+  font-family: "Jua";
+  font-size: 2.5em;
+}
+
+h5 {
+  font-family: "Angkor";
+  font-size: 1.5em;
+}
+
+.profile {
+  width: 100%;
+  font-family: "Dosis";
+}
+
+.employee {
+  width: 350px;
+  padding: 25px;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+  }
+
+  #team-members {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    margin: 15px;
+  }
+
+  h5 {
+    font-size: 1.2em;
+    margin: 15px;
+  }
+}
+
+
